@@ -17,6 +17,7 @@ class TabLink {
     this.element.addEventListener('click', () => {
       this.select();
     })
+    this.element.addEventListener('click', () => this.fade());
   };
 
   select() {
@@ -31,6 +32,11 @@ class TabLink {
       this.element.classList.add('tabs-link-selected');
     // Call the select method on the item associated with this link
     this.tabItem.select();
+  }
+  fade() {
+    $(function () {
+      $('.tabs-item-selected').hide().fadeIn(1500);
+    });
   }
 }
 
