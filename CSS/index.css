@@ -24,7 +24,7 @@
   background-color: #be2530;
 }
 .dropdown .dropdown-content {
-  z-index: -10;
+  z-index: -1;
   width: 100%;
   position: absolute;
   top: -350px;
@@ -34,6 +34,7 @@
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #931d25;
+  overflow: hidden;
 }
 .dropdown .dropdown-link {
   width: 100%;
